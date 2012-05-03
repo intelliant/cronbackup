@@ -1,0 +1,36 @@
+{
+  "name": "cronbackup",
+  "description": "Nuxeo Content Management System cron backup application",
+  "version": "0.1.0",
+  "author": {
+    "name": "Franz Viaud-Murat",
+    "email": "info@intelliant.fr"
+  },
+  "dependencies": {
+    "express": "2.5.8",
+    "jade": ">= 0.0.1",
+    "cron": "*",
+    "windows": "*",
+    "nodemailer": "*",      
+    "connect": "1.x",
+    "qs": "0.4.x",
+    "mime": "1.2.4",
+    "async": "0.1.15",
+    "rai": "*"
+  }
+  "keywords": [
+    "application",
+    "nuxeo",
+    "web",
+    "backup",
+    "restore",
+    "windows",
+    "git",
+    "postgresql",
+    "cron"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/intelliant/cronbackup.git"
+  }
+}

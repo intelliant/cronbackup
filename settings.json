@@ -1,0 +1,84 @@
+{
+  "cron": {
+    "data": "00 30 22 * * 2-6",
+    "program": "00 30 22 * * 2-6"  
+  },
+  "port": 3000,
+  "auth": {
+    "user": "admin",
+    "pass": "admin" 
+  },
+  "git": {
+    "cmd": "",
+    "dir": "",
+    "config": {
+      "user.name": "admin",   
+      "user.email": "admin@example.com",
+      "core.autocrlf": "false",
+      "core.excludesfile": ""
+    }  
+  },
+  "nuxeo": {
+    "regkey": "HKLM/SOFTWARE/Wow6432Node/Nuxeo", 
+    "configfile": "",
+    "vardir": "",
+    "path": "",
+    "datadir": "",
+    "logdir": "",
+    "requiredParam": [
+      "nuxeo.data.dir",
+      "nuxeo.log.dir",
+      "nuxeo.db.host",
+      "nuxeo.db.port",
+      "nuxeo.db.name",
+      "nuxeo.db.user",
+      "nuxeo.db.password"
+    ],      
+    "dumpfile": ""   
+  },
+  "db": {
+    "regkey": "HKLM/SOFTWARE/Wow6432Node/PostgreSQL/Installations/postgresql-8.4",
+    "dump": "",
+    "restore": "",
+    "host": "",
+    "port": "",
+    "name": "",
+    "user": "",
+    "password": "",
+    "pgpass": ""  
+  },
+  "log": {
+    "appenders": [
+      {
+        "type": "console"
+      },
+      { 
+        "category": "backup", 
+        "type": "file", 
+        "filename": "logs/backup.log", 
+        "maxLogSize": 1024000,
+        "backups": 10
+      },
+      {
+        "category": "email", 
+        "type": "smtp",
+        "recipients": "admin@example.com",
+        "sender": "staff@example.com",
+        "subject": "Nuxeo Backup Error",
+        "smtp": {
+          "host": "smtp.gmail.com",
+          "secureConnection": true,
+          "port": 465,
+          "auth": {
+            "user": "info@example.com",
+            "pass": "secret"
+          }        
+        }
+      }
+    ],   
+    "levels": {
+      "backup": "INFO",
+      "email": "INFO"
+    }
+  }
+}

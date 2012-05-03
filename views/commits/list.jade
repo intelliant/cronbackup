@@ -1,0 +1,14 @@
+include header
+div.commits
+  h2 Available Backups
+  if (list.length > 0)
+    ul 
+      each commit, i in list
+        li &rsaquo;&nbsp;
+          a(href='/commits/' + type + '/' + commit.id, class='commit')
+            #{commit.date}
+            if (commit.id == head.id)
+              span(class='head rounded').
+                CURRENT VERSION
+  else
+    p None

@@ -1,0 +1,149 @@
+body {
+  margin: 0;
+  padding: 0;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  color: #464646;
+  background-color:  #ffffff;  
+}
+
+h1 {
+  margin: 20px 20px 10px 20px;  
+}
+
+h2 {
+  margin: 0 20px 0 20px;
+  font-weight: normal;
+  font-size: 1.4em;
+}
+
+p {
+  margin: 0 20px 0 20px;
+}
+
+pre {
+  margin: 20px 20px 0 20px;
+  clear: both;
+}
+
+.result {
+  margin: 20px 20px 0 20px;
+}
+
+form {
+  margin: 20px 20px 0 20px;
+}
+
+.header {
+  width: 100%;
+  background-color: #4371ab;
+  position: absolute;
+  top: 0;
+}
+
+.header h1 {
+  color: #ffffff;
+  margin: 10px 0 0 20px;
+  font-size: 2.4em;
+}
+
+.header .icon {
+  float: right;
+  padding-top: 3px;
+}
+
+.icon img {
+  border: 0;
+}
+
+.header .right {
+  padding-right: 5px;
+}
+
+.commits {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 59px;
+  bottom: 0;
+  padding-top: 14px;
+}          
+
+.commits a {
+  color: #464646;
+  text-decoration: none;
+}
+
+.commits a:hover {
+  text-decoration: underline;
+}
+
+.commits form a:hover {
+  text-decoration: none;
+}
+
+.commits ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.commits li {
+  padding: 14px 20px 14px 20px;
+  font-size: 1.2em;
+  font-weight: bold;
+  border-top: 1px solid #aaaaaa;
+}
+
+.head {
+  font-size: .7em;
+  float: right;
+  position: relative;
+  top: -5px;
+}
+
+.rounded {
+	background-color: #dddddd;
+	padding: 8px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+}
+
+p.label {
+  margin-top: 20px;
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
+input {
+  padding: 10px 10px 10px 50px;
+  width: 120px;
+  font-size: 1.1em;
+  font-weight: bold; 
+  background-repeat:no-repeat;
+  color: #464646;
+  cursor:pointer;
+}
+
+input.cancel {
+  background-image:url('/images/cancel.png');
+  background-position: 10px 2px;
+}
+
+input.restore {
+  background-image:url('/images/download.png');
+  background-position: 10px 4px;
+}
+
+input.confirm {
+  background-image:url('/images/ok.png');
+  background-position: 10px 3px;
+}
+
+.success {
+  font-weight: bold;
+  color: green;
+}
+
+.failure, .warning {
+  font-weight: bold;
+  color: red;
+}

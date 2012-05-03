@@ -1,0 +1,28 @@
+include header
+div.commits
+  h2 Available Backups
+  p.label Date
+  p #{commit.date}
+  p.label ID
+  p #{commit.id}
+  if (diff == '' || commit.id == head.id)    
+    form(action='/commits/#{type}')
+      input(type='submit', value='OK', class='confirm')
+  else
+    form(action='/commits/#{type}', style='float: left;')
+      input(type='submit', value='Cancel', class='cancel')
+    form(action='/commits/#{type}/#{commit.id}', method='post')
+      input(type='hidden', name='command', value='checkout')
+      input(type='submit', value='Restore', class='restore')
+  pre
+    if (commit.id == head.id)    
+      div.success Backup successfully restored!
+    else
+      div.failure An error has occurred!
+      div.failure #{result}'
+    div Differences between backup and working version:
+    if (diff == '')    
+      p None
+    else
+      each item in diff    
+        &rsaquo;&nbsp;#{item} 
