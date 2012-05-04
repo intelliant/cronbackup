@@ -1,14 +1,14 @@
 Nuxeo Cron Backup
 =================
 
-This is a node.js application I have developed to backup periodically [Nuxeo
-5.5 open source Enterprise Content Management system](http://www.nuxeo.com).
+This is a node.js application I have developed to backup [Nuxeo 5.5 open source
+Enterprise Content Management system](http://www.nuxeo.com).
 At the moment the target system is Windows but adapting it to Linux or OSX
 should be an easy task.
 
 The application periodically commits all Nuxeo data to a local Git repository
 and is able to restore a specific revision to the disk without having to restart
-Nuxeo server (at least it may necessary that you disconnect to refresh the
+Nuxeo server (at least it may be necessary that you disconnect to refresh the
 application cache). All you have to do is to click on the "Restore" button.  
 
 Install
@@ -19,10 +19,10 @@ Install [Node 0.6.X](http://nodejs.org/#download) then:
     npm install cronbackup
      
 You also need to download and install [Git for Windows](http://code.google.com/p/msysgit/downloads/list).
-Simply put the portable version directly in the application folder in a
-subfolder named `git`, and the application will manage to find it itself,
-otherwise you will have to enter the full path to `cmd/git.cmd` in the
-`settings.json` configuration file (search `git.cmd` field).
+If it's installed in the default folder (C:\Program Files (x86)\Git), the
+application will manage to find it itself, otherwise you will have to enter the
+full path to `cmd/git.cmd` in the `settings.json` configuration file (search
+`git.cmd` field).
     
 Usage
 -----
@@ -85,7 +85,7 @@ License
 
 (The MIT License)
 
-Copyright (c) 2012 F. Viaud-Murat &lt;info@intelliantLfr&gt;
+Copyright (c) 2012 F. Viaud-Murat &lt;info@intelliant.fr&gt;
 
 Permission is hereby granted, free of charge, to any person obtaining
 a copy of this software and associated documentation files (the

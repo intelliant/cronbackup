@@ -1,7 +1,7 @@
 {
   "cron": {
     "data": "00 30 22 * * 2-6",
-    "program": "00 30 22 * * 2-6"  
+    "program": "00 00 22 * * 2-6"  
   },
   "port": 3000,
   "auth": {
@@ -9,7 +9,7 @@
     "pass": "admin" 
   },
   "git": {
-    "cmd": "",
+    "cmd": "C:\\Program Files (x86)\\Git\\cmd\\git.cmd",
     "dir": "",
     "config": {
       "user.name": "admin",   

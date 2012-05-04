@@ -41,10 +41,6 @@ exports.update = function (req, res, next) {
     id = req.params.id,
     command = req.body.command,
     backup = res.app.settings.backup[type];
-    
-  if (command != 'checkout') {
-    next(new Error('The application only supports checkout commands yet!'));
-  }
   
   if (id) {
     commit = backup.get(id);
