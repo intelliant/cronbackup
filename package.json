@@ -1,7 +1,7 @@
 {
   "name": "cronbackup",
   "description": "Nuxeo Content Management System cron backup application",
-  "version": "0.1.1",
+  "version": "0.2.0",
   "author": {
     "name": "Franz Viaud-Murat",
     "email": "info@intelliant.fr"
@@ -10,7 +10,6 @@
     "express": "2.5.8",
     "jade": ">= 0.0.1",
     "cron": "*",
-    "windows": "*",
     "nodemailer": "*",      
     "connect": "1.x",
     "qs": "0.4.x",
@@ -18,7 +17,7 @@
     "async": "0.1.15",
     "rai": "*"
   },
-  "publishConfig": { "tag": "0.1" },
+  "publishConfig": { "tag": "0.2" },
   "keywords": [
     "application",
     "nuxeo",

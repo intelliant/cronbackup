@@ -12,7 +12,7 @@
 var fs = require('fs'),
   path = require('path'),
   express = require('express'),
-  log4js = require('log4js'),
+  log4js = require('./lib/log4js/log4js'),
   commit = require('./commit'),
   configure = require('./lib/configure');
   
