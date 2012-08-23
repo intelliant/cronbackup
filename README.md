@@ -1,3 +1,4 @@
+[![build status](https://secure.travis-ci.org/intelliant/cronbackup.png)](http://travis-ci.org/intelliant/cronbackup)
 Nuxeo Cron Backup
 =================
 
